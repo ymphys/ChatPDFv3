@@ -1,0 +1,2 @@
+[console_scripts]
+chatpdf = chatpdfv3.interfaces.cli:main
