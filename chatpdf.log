@@ -221,3 +221,6 @@
 2025-11-30 09:09:22,483 - INFO - DeepSeek API用量: prompt_tokens=4397, completion_tokens=2410, total_tokens=6807, 估算价格=¥0.0160
 2025-11-30 09:09:27,918 - INFO - Review saved to reviews/2025-11-30_kb_review.md
 2025-11-30 09:09:27,919 - INFO - Review generation completed
+2025-11-30 13:52:51,927 - INFO - Starting ChatPDFv3 CLI process
+2025-11-30 13:53:01,212 - INFO - DeepSeek API用量: prompt_tokens=1060, completion_tokens=105, total_tokens=1165, 估算价格=¥0.0024
+2025-11-30 13:53:01,213 - INFO - Answer saved to files/test_kb/answers.md
