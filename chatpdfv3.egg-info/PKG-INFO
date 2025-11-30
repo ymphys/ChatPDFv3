@@ -8,6 +8,7 @@ Requires-Dist: openai>=2.7.1
 Requires-Dist: python-dotenv>=1.2.1
 Requires-Dist: requests>=2.32.5
 Requires-Dist: chromadb>=0.5.5
+Requires-Dist: scikit-learn>=1.5.1
 Provides-Extra: dev
 Requires-Dist: pytest>=8.3.3; extra == "dev"
 Provides-Extra: embeddings
@@ -140,7 +141,7 @@ uv run chatpdf --md-path document.md --temperature 0.7
 
 ```bash
 # 支持目录、单个 PDF、markdown、或者包含 URL 的 txt 文件
-uv run chatpdf kb build ./papers \
+uv run chatpdf kb build ./files/kb_store/PDFs \
   --chunk-size 800 \
   --embedding-model text-embedding-3-large
 ```

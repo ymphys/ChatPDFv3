@@ -11,6 +11,7 @@ ChatPDFv3是一个命令行工作流，它可以将任何公开可下载的PDF�
 - 运行一个支持用户自定义问题的DeepSeek解读，每次问答结果都将存储下来作为后续提问的输入，因此具有上下文记忆功能
 - 保存了可后续追溯的log文件，方便用户查看每次运行操作细节
 - **文献知识库模块**：Markdown自动分段→嵌入→ChromaDB本地向量库→检索增强问答，可实现跨文献查询
+- **文献综述生成模块**：基于知识库聚类主题、生成大纲与草稿，并可选用 RAG 证据微调，使综述严格引用 KB 片段
 
 使用它可以加速文献阅读，生成摘要或提取文献关键信息。
 
@@ -125,7 +126,7 @@ uv run chatpdf --md-path document.md --temperature 0.7
 
 ```bash
 # 支持目录、单个 PDF、markdown、或者包含 URL 的 txt 文件
-uv run chatpdf kb build ./papers \
+uv run chatpdf kb build ./files/kb_store/PDFs \
   --chunk-size 800 \
   --embedding-model text-embedding-3-large
 ```
@@ -162,6 +163,43 @@ uv run chatpdf kb info
 | `chatpdf kb build <source>` | 读取本地/远程 PDF 或现有 markdown，构建/更新知识库 |
 | `chatpdf kb ask "question"` | 基于知识库进行检索增强问答，可配合 `--top-k`、`--save` |
 | `chatpdf kb info` | 打印当前知识库的统计与配置 |
+
+---
+
+## 文献综述生成（review）
+
+构建完知识库后，可直接调用 `review` 子命令生成结构化的文献综述。流程包括：
+
+1. **discover_topics**：对知识库的切片向量做 KMeans 聚类，发现核心研究主题。
+2. **summarize_topics**：对每个主题的所有片段做 LLM 摘要，形成主题卡片。
+3. **generate_outline**：将主题摘要组织为“引言-主体-展望”的综述大纲。
+4. **generate_review**：依据大纲和主题证据写出 1200–1500 字的综述草稿。
+5. **refine_with_rag（可选）**：对每段草稿再次检索最近似片段，附上证据引用。
+
+### 使用示例
+
+```bash
+uv run chatpdf review \
+  --kb-path files/kb_store \
+  --clusters 6 \
+  --refine \
+  --output reviews/2024_q1_llm_review.md
+```
+
+命令默认使用 `deepseek-chat`，可通过 `--llm-model` 自定义；大纲/草稿的采样温度分别由 `--outline-temperature` 与 `--draft-temperature` 控制。
+
+| 参数 | 描述 |
+| --- | --- |
+| `--kb-path` | 指定知识库目录，默认 `files/kb_store` |
+| `--clusters` | 主题簇数量（默认为 5）；聚类数会自动受限于已有切片数 |
+| `--llm-model` | 控制生成综述所用的 DeepSeek/OpenAI 模型（默认为 `deepseek-chat`） |
+| `--outline-temperature` | 综述大纲生成的温度（默认 0.3） |
+| `--draft-temperature` | 综述草稿生成的温度（默认 0.4） |
+| `--refine` | 追加 RAG 证据，并在草稿段落下方输出“证据支持”列表 |
+| `--refine-top-k` | RAG 每段检索的片段数量（默认 3） |
+| `--output` | 将主题摘要、大纲、正文保存为 markdown 文件 |
+
+命令执行后，CLI 会直接在终端打印主题摘要、大纲与草稿内容，方便快速复制或继续修改。
 
 ---
 

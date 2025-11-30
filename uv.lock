@@ -205,12 +205,13 @@ wheels = [
 [[package]]
 name = "chatpdfv3"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "chromadb" },
     { name = "openai" },
     { name = "python-dotenv" },
     { name = "requests" },
+    { name = "scikit-learn" },
 ]
 
 [package.optional-dependencies]
@@ -228,6 +229,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.3.3" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
     { name = "requests", specifier = ">=2.32.5" },
+    { name = "scikit-learn", specifier = ">=1.5.1" },
     { name = "sentence-transformers", marker = "extra == 'embeddings'", specifier = ">=3.0.1" },
 ]
 provides-extras = ["dev", "embeddings"]

@@ -1,0 +1,724 @@
+# Heavy quark symmetry of  $\Lambda_{b}^{0}$  decays in quark models
+
+Jiabao Zhang*, Xiang-Nan Jin,† Chia-Wei Liu,‡ and Chao-Qiang Geng§
+
+School of Fundamental Physics and Mathematical Sciences, Hangzhou Institute for Advanced Study,
+
+UCAS, Hangzhou 310024, China
+
+and University of Chinese Academy of Sciences, Beijing 100190, China
+
+(Received 28 November 2022; accepted 1 February 2023; published 16 February 2023)
+
+We study the heavy quark symmetry with the homogeneous bag model (HBM) and light-front quark model (LFQM) based on the decays of  $\Lambda_b^0\to \Lambda_c^+\ell^{-}\bar{\nu}_\ell (\ell = e,\mu ,\tau)$ . In particular, we calculate various parameters in the heavy quark expansions, including the Isgur-Wise functions and their first order corrections. The parameters in the HBM are fitted from the mass spectra, while the ones in the LFQM are tightly constrained by the heavy quark symmetry, granting the predictive power of our results. We explicitly obtain that  $\mathcal{B}(\Lambda_b^0\to \Lambda_c^+ e^- \bar{\nu}_e) = (5.69\pm 0.58,5.35\pm 0.50),\quad \mathcal{B}(\Lambda_b^0\to \Lambda_c^+\mu^-\bar{\nu}_\mu) = (5.67\pm 0.58,5.33\pm 0.49)$ , and  $\Gamma (\Lambda_b^0\to \Lambda_c^+\tau^- \bar{\nu}_\tau) / \Gamma (\Lambda_b^0\to \Lambda_c^+\mu^-\bar{\nu}_\mu) = (0.3243\pm 0.0126,0.3506\pm 0.0046)$  for the numerical values of (HBM, LFQM). Our results of the branching fractions in both models agree well with the experimental data and lattice QCD calculations. In addition, we find that the hard gluon corrections decrease the branching fractions around  $10\%$ .
+
+DOI: 10.1103/PhysRevD.107.033004
+
+# I. INTRODUCTIONS
+
+Testing the lepton universality via beauty quark decays has raised great interest in both theories and experiments [1-12]. Recently, the LHCb collaboration has reported the ratio of  $R_{\Lambda_c} = \mathcal{B}(\Lambda_b^0 \to \Lambda_c^+ \tau^- \bar{\nu}_\tau) / \mathcal{B}(\Lambda_b^0 \to \Lambda_c^+ \mu^- \bar{\nu}_\mu)$ , given by [13,14]
+
+$$
+R _ {\Lambda_ {c}} = 0. 2 4 2 \pm 0. 0 2 6 \pm 0. 0 4 0 \pm 0. 0 5 9, \tag {1}
+$$
+
+where the first and second uncertainties are systematic and statistical in  $\mathcal{B}(\Lambda_b^0\to \Lambda_c^+\tau^-{\bar{\nu}_\tau})$ , and the third one comes from  $\mathcal{B}(\Lambda_b^0\rightarrow \Lambda_c^+\mu^{-}\bar{\nu}_\mu)$ , respectively. On the other hand, the lattice quantum chromodynamics (LQCD) gives a slightly larger ratio [15,16]. The results along with the meson versions are summarized in Fig. 1 with  $R_{D^{(*)}} = \Gamma (B\to D^{(*)}\tau^{-}\bar{\nu}_{\tau}) / \Gamma (B\to D^{(*)}e^{-}\bar{\nu}_{e})$  [17,18]. Notice that the experimental values of  $R_{D^{(*)}}$  are larger than the theoretical ones in contrast to  $R_{\Lambda_c}$ .
+
+On the theoretical side, the form factors of  $\Lambda_b^0\to \Lambda_c^+$  provide ideal playgrounds for quark models. The main
+
+reason is that at the massless limit of  $(u,d)$ , there are only two energy scales in  $\Lambda_{Q}$  with  $Q = (b,c)$ , given by
+
+$$
+\bar {\Lambda} = \lim  _ {m _ {Q} \rightarrow \infty} (M _ {Q} - m _ {Q}), \quad \varepsilon_ {Q} = \bar {\Lambda} / 2 m _ {Q} \ll 1, \tag {2}
+$$
+
+where  $M_Q$  and  $m_Q$  are the heavy baryon and quark masses, respectively. As  $\varepsilon_Q$  are tiny, the physical quantities are Taylor expanded regarding  $\varepsilon_Q$ , namely the heavy quark expansion (HQE).
+
+We take the Isgur-Wise function as an illustration, given as
+
+$$
+\bar {\xi} (\omega) = \xi (\omega) + \left(\varepsilon_ {b} + \varepsilon_ {c}\right) \xi_ {\mathrm {k e}} (\omega) + \mathcal {O} \left(\varepsilon_ {c} ^ {2}\right), \tag {3}
+$$
+
+where  $\xi (\omega)$  is the Isgur-Wise function,  $\xi_{\mathrm{ke}}(\omega)$  is the first order correction, and  $\omega = v_{b}\cdot v_{c}$  with  $v_{Q}$  the four-velocities of  $\Lambda_{Q}$ . As we will see in the next section,  $\bar{\xi} (\omega)$  governs the recoil effects of the form factors. Although the experiments can probe  $\bar{\xi} (\omega)$  only, Eq. (3) allows us to compare  $\xi (\omega)$  and  $\xi_{\mathrm{ke}}(\omega)$  separately among the quark models, without the dependence of the quark masses.
+
+In this work, we take the homogeneous bag model (HBM) and LFQM to illustrate the heavy quark symmetry. These models are unimpressive but interesting in different aspects. On the one hand, the HBM is a relativistic quark model, in which  $u$  and  $d$  quarks can be safely taken as massless, and the parameters are fitted from the mass spectra. It is reliable at the zero recoil point  $(\omega = 1)$ , but unequal time commutators are needed for a boosted state, causing several uncertainties as  $\omega$  goes up. On the other hand, the LFQM describes the bound state in a
+
+Published by the American Physical Society under the terms of the Creative Commons Attribution 4.0 International license. Further distribution of this work must maintain attribution to the author(s) and the published article's title, journal citation, and DOI. Funded by SCOAP<sup>5</sup>.
+
+![](images/e1bdd4710ad0bb5b9c1dc739ca7036550ba759674cf63d930de36e65ba4e9cfa.jpg)  
+FIG. 1. The ratios of  $R_{D}, R_{D^{*}}$ , and  $R_{\Lambda_c}$  in the experiments and LQCD.
+
+frame-independent way, in which only the relative motions between the constituents are required [19-29]. The Lorentz
+
+boosts in the front form are generated by the kinematical operators, which leave the  $x^{+} = 0$  plane invariant [30,31], so the unequal time commutation relations are not needed. However, the LFQM suffers the uncertainties from the parameters input. In addition, the  $Z$ -graph contributions forbid us from computing the form factors in the timelike region [32-38]. We will show that these aforementioned difficulties are resolved by the heavy quark symmetry.
+
+This paper is organized as follows. We present the formalism of the HBM and LFQM in Sec. II. The numerical results are given in Sec. III. Section IV is the conclusion.
+
+# II. FORMALISM
+
+We briefly review some of the results of the HQE, where the details can be found in Ref. [16]. In the heavy quark system, there are two popular parametrizations for the form factors, given as
+
+$$
+\begin{array}{l} \langle \Lambda_ {c} ^ {+} | \bar {c} \gamma^ {\mu} (1 - \gamma_ {5}) b | \Lambda_ {b} ^ {0} \rangle = \bar {u} _ {c} [ (F _ {1} ^ {V} (\omega) \gamma^ {\mu} + F _ {2} ^ {V} (\omega) v _ {b} ^ {\mu} + F _ {3} ^ {V} (\omega) v _ {c} ^ {\mu}) - (F _ {1} ^ {A} (\omega) \gamma^ {\mu} + F _ {2} ^ {A} (\omega) v _ {b} ^ {\mu} + F _ {3} ^ {A} (\omega) v _ {c} ^ {\mu}) \gamma_ {5} ] u _ {b} \\ \times \bar {u} _ {c} \left[ \left(f _ {1} \left(q ^ {2}\right) \gamma^ {\mu} - f _ {2} \left(q ^ {2}\right) \frac {i \sigma^ {\mu \nu} q _ {\nu}}{M _ {b}} + f _ {3} \left(q ^ {2}\right) \frac {q ^ {\mu}}{M _ {b}}\right) \right. \\ \left. - \left(g _ {1} \left(q ^ {2}\right) \gamma^ {\mu} - g _ {2} \left(q ^ {2}\right) \frac {i \sigma^ {\mu \nu} q _ {\nu}}{M _ {b}} + g _ {3} \left(q ^ {2}\right) \frac {q ^ {\mu}}{M _ {b}}\right) \gamma_ {5} \right] u _ {b}, \tag {4} \\ \end{array}
+$$
+
+where  $q = p_{b} - p_{c}$ , and  $p_{b}$  and  $p_{c}$  are the four momenta of  $\Lambda_{b}^{0}$  and  $\Lambda_{c}^{+}$ , respectively. From  $p_{Q} = m_{Q}v_{Q}$ , it is straightforward to show that  $q^{2} = M_{b}^{2} + M_{c}^{2} - 2M_{b}M_{c}\omega$ . Two sets of parametrizations are related as
+
+$$
+f _ {1} = F _ {1} ^ {V} + \frac {M _ {+}}{2 M _ {b}} F _ {2} ^ {V} + \frac {M _ {+}}{2 M _ {c}} F _ {3} ^ {V}, \quad f _ {2, 3} = \mp \frac {1}{2} F _ {2} ^ {V} - \frac {M _ {b}}{2 M _ {c}} F _ {3} ^ {V},
+$$
+
+$$
+g _ {1} = F _ {1} ^ {A} - \frac {M _ {-}}{2 M _ {b}} F _ {2} ^ {A} - \frac {M _ {-}}{2 M _ {c}} F _ {3} ^ {A}, \quad g _ {2, 3} = \mp \frac {1}{2} F _ {2} ^ {A} - \frac {M _ {b}}{2 M _ {c}} F _ {3} ^ {A}, \tag {5}
+$$
+
+with  $M_{\pm}\equiv M_b\pm M_c$
+
+At the zero-recoil point of  $\omega = 1$ , the form factors are simply written as [39]
+
+$$
+F _ {1} ^ {V} (1) = 1 + \varepsilon_ {b} + \varepsilon_ {c} + \varepsilon_ {c} ^ {2} (b _ {1} - b _ {2}), \qquad F _ {1} ^ {A} = 1 + \varepsilon_ {c} ^ {2} b _ {1},
+$$
+
+$$
+F _ {2} ^ {V} (1) = F _ {2} ^ {A} (1) = - \varepsilon_ {c} + b _ {2} \varepsilon_ {c} ^ {2}, \quad F _ {3} ^ {V, A} (1) = \mp \varepsilon_ {b}, \tag {6}
+$$
+
+to the precision of  $\mathcal{O}(\varepsilon_b\varepsilon_c)$ , providing that hard gluon corrections are absent. A great advantage in the heavy quark system is that the recoil effects are taken into account by a single function of  $\bar{\xi} (\omega)$  i.e.,
+
+$$
+F _ {1, 2, 3} ^ {V, A} (\omega) = \bar {\xi} (\omega) F _ {1, 2, 3} ^ {V, A} (1). \tag {7}
+$$
+
+After including the hard gluon corrections shown in Fig. 2, the form factors receive several corrections, given by
+
+$$
+\frac {F _ {1} ^ {V} (\omega)}{\bar {\xi} (\omega)} = 1 + \hat {\alpha} _ {s} C _ {V _ {1}} + \varepsilon_ {c} + \varepsilon_ {b} + \hat {\alpha} _ {s} \left[ C _ {V _ {1}} + 2 (\omega - 1) C _ {V _ {1}} ^ {\prime} \right] \left(\varepsilon_ {c} + \varepsilon_ {b}\right) + \varepsilon_ {c} ^ {2} (b _ {1} - b _ {2}),
+$$
+
+$$
+\begin{array}{l} \frac {F _ {2} ^ {V} (\omega)}{\bar {\xi} (\omega)} = \hat {\alpha} _ {s} C _ {V _ {2}} - \frac {2 \varepsilon_ {c}}{\omega + 1} + \hat {\alpha} _ {s} \left\{C _ {V _ {2}} \frac {3 \omega - 1}{\omega + 1} \varepsilon_ {b} - [ 2 C _ {V _ {1}} - (\omega - 1) C _ {V _ {2}} + 2 C _ {V _ {3}} ] \frac {\varepsilon_ {c}}{\omega + 1} \right. \\ \left. + 2 (\omega - 1) C _ {V _ {2}} ^ {\prime} \left(\varepsilon_ {c} + \varepsilon_ {b}\right) \right\} + \varepsilon_ {c} ^ {2} b _ {2}, \\ \end{array}
+$$
+
+$$
+\begin{array}{l} \frac {F _ {3} ^ {V} (\omega)}{\bar {\xi} (\omega)} = \hat {\alpha} _ {s} C _ {V _ {3}} - \frac {2 \varepsilon_ {b}}{\omega + 1} + \hat {\alpha} _ {s} \left\{C _ {V _ {3}} \frac {3 \omega - 1}{\omega + 1} \varepsilon_ {c} - [ 2 C _ {V _ {1}} + 2 C _ {V _ {2}} - (\omega - 1) C _ {V _ {3}} ] \frac {\varepsilon_ {b}}{\omega + 1} \right. \\ \left. + 2 (\omega - 1) C _ {V _ {3}} ^ {\prime} \left(\varepsilon_ {c} + \varepsilon_ {b}\right) \right\}, \\ \end{array}
+$$
+
+$$
+\frac {F _ {1} ^ {A} (\omega)}{\bar {\xi} (\omega)} = 1 + \hat {\alpha} _ {s} C _ {A _ {1}} + \left(\varepsilon_ {c} + \varepsilon_ {b}\right) \frac {\omega - 1}{\omega + 1} + \hat {\alpha} _ {s} \left[ C _ {A _ {1}} \frac {\omega - 1}{\omega + 1} + 2 (\omega - 1) C _ {A _ {1}} ^ {\prime} \right] \left(\varepsilon_ {c} + \varepsilon_ {b}\right) + \varepsilon_ {c} ^ {2} b _ {1},
+$$
+
+$$
+\begin{array}{l} \frac {F _ {2} ^ {A} (\omega)}{\bar {\xi} (\omega)} = \hat {\alpha} _ {s} C _ {A _ {2}} - \frac {2 \varepsilon_ {c}}{w + 1} + \hat {\alpha} _ {s} \left\{C _ {A _ {2}} \frac {3 w + 1}{w + 1} \varepsilon_ {b} - [ 2 C _ {A _ {1}} - (w + 1) C _ {A _ {2}} + 2 C _ {A _ {3}} ] \frac {\varepsilon_ {c}}{w + 1} \right. \\ \left. + 2 (w - 1) C _ {A _ {2}} ^ {\prime} \left(\varepsilon_ {c} + \varepsilon_ {b}\right) \right\} + \varepsilon_ {c} ^ {2} b _ {2}, \\ \end{array}
+$$
+
+$$
+\begin{array}{l} \frac {F _ {3} ^ {A} (\omega)}{\bar {\xi} (\omega)} = \hat {\alpha} _ {s} C _ {A _ {3}} + \frac {2 \varepsilon_ {b}}{w + 1} + \hat {\alpha} _ {s} \left\{C _ {A _ {3}} \frac {3 w + 1}{w + 1} \varepsilon_ {c} + [ 2 C _ {A _ {1}} - 2 C _ {A _ {2}} + (w + 1) C _ {A _ {3}} ] \frac {\varepsilon_ {b}}{w + 1} \right. \\ \left. + 2 (w - 1) C _ {A _ {3}} ^ {\prime} \left(\varepsilon_ {c} + \varepsilon_ {b}\right) \right\}, \tag {8} \\ \end{array}
+$$
+
+where  $\hat{\alpha}_s$  is the strong coupling constant, and the definitions of  $C_{A,V_{1,2,3}}^{(t)}$  can be found in Ref. [16]. To include both soft and hard gluon corrections, we extract the relevant parameters of  $\bar{\xi} (\omega),\bar{\Lambda}$  , and  $b_{1,2}$  from the quark models, where the soft gluon (non-perturbative) effects are taken account by the wave functions. After that, we plug the computed parameters into Eq. (8) to contain the hard gluon corrections.
+
+We note that the heavy baryon masses can be expanded as
+
+$$
+M _ {Q} = m _ {Q} + \bar {\Lambda} + \frac {\lambda_ {1}}{2 m _ {Q}} + \mathcal {O} \left(\varepsilon_ {Q} ^ {2}\right). \tag {9}
+$$
+
+It is convenient to rewrite the binding energy as  $\bar{\Lambda} = CE_{\mathrm{di}}$  where  $E_{\mathrm{di}}$  stands for the energy of the diquark system, and  $C$  describes the correction of it in the presence of the heavy quark with an infinite mass.
+
+# A. Homogeneous bag model
+
+We begin our study with the MIT bag model, of which the quark wave functions of the baryons are confined in a finite region, given as [40]
+
+$$
+\begin{array}{l} \phi_ {q \updownarrow} (\vec {x}) = \left( \begin{array}{c} j _ {0} (p _ {q} r) \chi_ {\updownarrow} \\ i \frac {p _ {q}}{E _ {q} ^ {k} + p _ {q}} j _ {1} (p _ {q} r) \hat {r} \cdot \vec {\sigma} \chi_ {\updownarrow} \end{array} \right), \quad \text {f o r} r \leq R, \\ \phi_ {q \updownarrow} (\vec {x}) = 0, \quad \text {f o r} r > R, \tag {10} \\ \end{array}
+$$
+
+with  $r = |\vec{x}|$  and  $R$  the bag radius. Here,  $j_{0,1}$  are the spherical Bessel functions,  $E_q^k = \sqrt{p_q^2 + m_q^2}$  with  $m_q$  and  $p_q$  the quark mass and three-momentum, and  $\chi_\uparrow = (1,0)^T$  and  $\chi_\downarrow = (0,1)^T$  represent a spin-up and a spin-down quarks, respectively. From the boundary condition,  $p_q$  must satisfy [40]
+
+$$
+\tan \left(p _ {q} R\right) = \frac {p _ {q} R}{1 - m _ {q} R + E _ {q} ^ {k} R}. \tag {11}
+$$
+
+In particular, we have
+
+$$
+\lim  _ {m _ {u, d} \rightarrow 0} p _ {u, d} = 2. 0 4 3 / R, \tag {12}
+$$
+
+and
+
+![](images/50084c2409d8f15953f7f2b295fd00b761274a7f559d60b24717a06cba7c515a.jpg)  
+FIG. 2. The hard gluon corrections of the current operators.
+
+$$
+p _ {Q} = \frac {\pi}{R} \left(1 - \frac {1}{2 m _ {Q} R}\right), \quad E _ {Q} ^ {k} = m _ {Q} + \frac {\pi^ {2}}{2 m _ {Q} R ^ {2}}, \tag {13}
+$$
+
+to the precision of  $\mathcal{O}(1 / m_Q^2 R^2)$ . It is interesting to point out that the zeroth order corrections are absent in  $E_{Q}^{k}$ , and the first order corrections correspond to the kinematic energies of the heavy quarks in the nonrelativistic limit. Plugging Eq. (13) into the bag wave functions, we are led to
+
+$$
+\phi_ {Q} (\vec {x}) = \left( \begin{array}{c} \left(j _ {0} \left(\pi r / R\right) - \frac {\pi r}{2 R ^ {2} m _ {Q}} j _ {1} \left(\pi r / R\right)\right) \chi \\ i \frac {\pi}{2 m _ {Q} R} j _ {1} \left(\pi r / R\right) \hat {r} \cdot \vec {\sigma} \chi \end{array} \right). \tag {14}
+$$
+
+On the other hand, the masses of the baryons are given as
+
+$$
+M _ {Q} = Z _ {0} / R + \frac {4 \pi}{3} R ^ {3} B _ {0} ^ {4} + E _ {I} + \sum_ {q} E _ {q} ^ {k}, \tag {15}
+$$
+
+where  $Z_{0}$  and  $B_{0}$  are associated with the zero-point and bag volume energies, respectively,  $E_{I}$  is the interaction energies, and  $R$  minimizes the baryon masses, given by
+
+$$
+\frac {\partial M _ {Q}}{\partial R} = 0. \tag {16}
+$$
+
+In calculating the Isgur-Wise function, we do not include the interaction corrections, so we set  $E_{I} = 0$  for consistency, which is the major source of errors.
+
+Combining Eqs. (12) and (13), we arrive at
+
+$$
+\frac {\partial M _ {Q}}{\partial R} = 4 \pi R ^ {2} B _ {0} ^ {4} - (Z _ {0} + 4. 0 8 6) / R ^ {2} = 0. \tag {17}
+$$
+
+There are two sets of bag parameters in Ref. [40], given as
+
+$$
+\left(Z _ {0}, B _ {0}\right) = (1. 8 4, 0. 1 4 5 \mathrm {G e V}), \quad (1. 9 5, 0. 1 2 5 \mathrm {G e V}), \tag {18}
+$$
+
+resulting in that
+
+$$
+(\bar {\Lambda}, R ^ {- 1}) = (0. 6 6 5, 0. 2 2 3), \quad (0. 5 5 4, 0. 1 9 5) \mathrm {G e V}, \tag {19}
+$$
+
+respectively.
+
+The twist is that although the MIT bag model successfully explains most of the low-lying baryon masses, it is difficult to be applied in decays, especially in taking account the recoil effects ( $\omega$  dependencies). The problem can be traced back to the fact that bag states are localized. According to the Heisenberg uncertainty principle, it cannot be an eigenstate of three-momenta, which is referred to as the center-of-mass motion (CMM) problem. The difficulties were tackled a few years ago in Ref. [41], where localized bags are replaced by linear superpositions of infinite ones, distributed homogeneously all over the space.
+
+It has been shown that after the CMM is removed, the axial form factor in the neutron beta decay increases to
+
+$g_{A} = 1.31$  by  $20\%$  [42]. Comparing to the experimental value of  $g_{A} = 1.275$ , it is clear that the numerical estimation is improved. On the other hand, in the heavy flavor conserving decays, the CMM was identified to be the reason of the underestimation of the four-quark operator matrix elements [43].
+
+In the HBM, the baryon states at rest are given as
+
+$$
+\begin{array}{l} \left| \Lambda_ {Q}, \uparrow \right\rangle = \int \frac {1}{\sqrt {6}} \epsilon^ {\alpha \beta \gamma} d _ {a \alpha} ^ {\dagger} (\vec {x} _ {d}) u _ {b \beta} ^ {\dagger} (\vec {x} _ {u}) Q _ {c \gamma} ^ {\dagger} (\vec {x} _ {Q}) \\ \times \Psi_ {A _ {\uparrow} (d u Q)} ^ {a b c} (\vec {x} _ {d}, \vec {x} _ {u}, \vec {x} _ {Q}) [ d ^ {3} \vec {x} ] | 0 \rangle , \tag {20} \\ \end{array}
+$$
+
+where the Greek (Latin) letters represent the color (Dirac spinor) indices,  $\epsilon$  stands for the totally antisymmetric tensor,  $[d^3\vec{x}] = d^3\vec{x}_d d^3\vec{x}_u d^3\vec{x}_Q$ ,  $q^\dagger$  is the creation operator of the quark, satisfying
+
+$$
+\left\{q _ {a \alpha} ^ {\dagger} (\vec {x}), q _ {b \beta} \left(\vec {x} ^ {\prime}\right) \right\} = \delta_ {a b} \delta_ {\alpha \beta} \delta^ {3} \left(\vec {x} - \vec {x} ^ {\prime}\right), \tag {21}
+$$
+
+with  $q\in \{u,d,Q\}$ , and the spatial distributions are described by
+
+$$
+\begin{array}{l} \Psi_ {A _ {\uparrow} (d u Q)} ^ {a b c} (\vec {x} _ {d}, \vec {x} _ {u}, \vec {x} _ {Q}) = \frac {\mathcal {N} _ {Q}}{\sqrt {2}} \int [ \phi_ {d \uparrow} ^ {a} (\vec {x} _ {d} - \vec {x} _ {\Delta}) \phi_ {u \downarrow} ^ {b} (\vec {x} _ {u} - \vec {x} _ {\Delta}) \\ \left. - \phi_ {d \downarrow} ^ {a} (\vec {x} _ {d} - \vec {x} _ {\Delta}) \phi_ {u \uparrow} ^ {b} (\vec {x} _ {u} - \vec {x} _ {\Delta}) \right] \\ \times \phi_ {Q \uparrow} ^ {c} (\vec {x} _ {Q} - \vec {x} _ {\Delta}) d ^ {3} \vec {x} _ {\Delta}, \tag {22} \\ \end{array}
+$$
+
+where  $\mathcal{N}_Q$  are the normalization constants. If not stated otherwise,  $q^{\dagger}(\vec{x})$  is evaluated at  $t = 0$  in this work.
+
+In Eq. (22),  $\phi_{q\downarrow}(\vec{x}_q - \vec{x}_{\Delta})$  represents the quark state in the static bag centering at  $\vec{x}_{\Delta}$ . By carrying out the integral of  $d^{3}\vec{x}_{\Delta}$ , it is straightforward to see that the baryons are distributed uniformly all over the three-dimensional space. Therefore, the unwanted CMM is removed. We note that the formulas are reduced to the ones of the MIT bag model when the integral of  $d^{3}\vec{x}_{\Delta}$  is eliminated.
+
+To get a baryon state with a nonzero momentum, we apply the Lorentz boost to Eq. (20). The transformation rule of the creation operators reads
+
+$$
+U _ {v} q _ {\alpha a} ^ {\dagger} \left(x ^ {\mu}\right) U _ {v} ^ {- 1} = \left(S _ {v}\right) _ {a b} q _ {\alpha b} ^ {\dagger} \left(\left(\Lambda_ {v} ^ {- 1}\right) _ {\nu} ^ {\mu} x ^ {\nu}\right), \tag {23}
+$$
+
+where  $U_{v}$ ,  $S_{v}$ , and  $\Lambda_{v}$  are the Lorentz boost operators of states, Dirac spinors, and coordinates, respectively. Without loss of generality, we take the Lorentz boost toward the  $\hat{z}$  direction, resulting in
+
+$$
+S _ {\pm v} = \left( \begin{array}{c c} a _ {+} & \pm a _ {-} \sigma_ {3} \\ \pm a _ {-} \sigma_ {3} & a _ {+} \end{array} \right),
+$$
+
+$$
+S _ {\pm v} ^ {2} = \left( \begin{array}{c c} \gamma & \pm \gamma v \sigma_ {3} \\ \pm \gamma v \sigma_ {3} & \gamma \end{array} \right), \tag {24}
+$$
+
+where  $a_{\pm} = \sqrt{(\gamma \pm 1) / 2}$  and  $\gamma = 1 / \sqrt{1 - v^2}$ .
+
+From Eq. (23), we see that even if we start with  $t = 0$  the  $t$  dependencies of quark states are nevertheless still required. It is due to note that the  $t = 0$  plane is not invariant under Lorentz boosts. Thus, for the state having a Lorentz boost, we have to evaluate the anticommutation relations with unequal times, which cannot be treated perturbatively. To overcome the problem, we utilize that the quark states are energy eigenstates in the bag model and make the substitution in Eq. (22)
+
+$$
+q _ {a \alpha} ^ {\dagger} (\vec {x}) = e ^ {- i E _ {q} t} q _ {a \alpha} ^ {\dagger} (t, \vec {x}), \tag {25}
+$$
+
+where  $E_{q}$  are the energies of the quarks. It is clear that we do not consider the interaction energies here, as the quark energies are independent to each other. The reasonable range of  $E_{q}$  is
+
+$$
+\frac {1}{3} M _ {N} <   E _ {q} <   E _ {q} ^ {k} + \frac {1}{3} \left(E _ {0} + E _ {v}\right), \tag {26}
+$$
+
+where  $M_N$  is the neutron mass, and  $E_0$  and  $E_v$  are the zero-point and vacuum energies arisen from the bag, respectively, which are allocated evenly among the quarks. In the HBM, Eq. (26) serves as the major source of the uncertainties.
+
+After some algebra, we arrive at [42]
+
+$$
+\Psi^ {a b c} \left(\vec {x} _ {1}, \vec {x} _ {2}, \vec {x} _ {3}\right) \vec {v} \left(S _ {v}\right) _ {a a ^ {\prime}} \left(S _ {v}\right) _ {b b ^ {\prime}} \left(S _ {v}\right) _ {c c ^ {\prime}} \Psi^ {a ^ {\prime} b ^ {\prime} c ^ {\prime}} \left(\vec {x} _ {1} ^ {v}, \vec {x} _ {2} ^ {v}, \vec {x} _ {3} ^ {v}\right), \tag {27}
+$$
+
+where  $\vec{x}^v = (x,y,\gamma z)$ . From the normalization condition
+
+$$
+\langle \Lambda_ {Q}, \vec {p} ^ {\prime} | \Lambda_ {Q} \vec {p} \rangle = u ^ {\dagger} u (2 \pi) ^ {3} \delta^ {3} (\vec {p} - \vec {p} ^ {\prime}), \tag {28}
+$$
+
+we derive that
+
+$$
+\frac {\bar {u} u}{\mathcal {N} ^ {2}} = \int d ^ {3} \vec {x} _ {\Delta} \prod_ {q} \int \phi_ {q} ^ {\dagger} \left(\vec {x} _ {q} ^ {+}\right) \phi_ {q} \left(\vec {x} _ {q} ^ {-}\right) d ^ {3} \vec {x} _ {q}, \tag {29}
+$$
+
+where  $\vec{x}_q^{\pm} = \vec{x}_q\pm \vec{x}_{\Delta} / 2$  , and  $\sum_qE_q = M_Q$  has been used.
+
+We adopt the Breit frame so that  $\Lambda_b^0$  and  $\Lambda_c^+$  have opposite velocities. Collecting Eqs. (20), (21), and (27), we find that
+
+$$
+\begin{array}{l} \langle \Lambda_ {c} ^ {+} (\vec {v}) | c ^ {\dagger} \Gamma b (0) | \Lambda_ {b} ^ {0} (- \vec {v}) \rangle \\ = \mathcal {N} _ {c} \mathcal {N} _ {b} \int d ^ {3} \vec {x} _ {\Delta} \Gamma_ {c b} (\vec {x} _ {\Delta}) \prod_ {l} D _ {l} ^ {v} (\vec {x} _ {\Delta}), \tag {30} \\ \end{array}
+$$
+
+along with
+
+$$
+\begin{array}{l} \Gamma_ {c b} (\vec {x} _ {\Delta}) = \int d ^ {3} \vec {x} \phi_ {c} ^ {\dagger} \left(\vec {x} + \frac {1}{2} \vec {x} _ {\Delta}\right) \\ \times S _ {v} \Gamma S _ {- v} \phi_ {b} \left(\vec {x} - \frac {1}{2} \vec {x} _ {\Delta}\right) e ^ {2 i E _ {\mathrm {d i}} \vec {v} \cdot \vec {x}}, \\ \end{array}
+$$
+
+$$
+\begin{array}{l} D _ {l} ^ {v} (\vec {x} _ {\Delta}) = \frac {1}{\gamma} \int d ^ {3} \vec {x} \phi_ {l} ^ {\dagger} \left(\vec {x} + \frac {1}{2} \vec {x} _ {\Delta}\right) \phi_ {l} \left(\vec {x} - \frac {1}{2} \vec {x} _ {\Delta}\right) e ^ {- 2 i E _ {l} \vec {v} \cdot \vec {x}}, \\ l = u, d, \tag {31} \\ \end{array}
+$$
+
+where  $\Gamma$  is an arbitrary Dirac matrix,  $E_{\mathrm{di}} = E_u + E_d$ , and  $\omega = \gamma^2 (1 + v^2)$ . In general,  $\Gamma_{cb}$  and  $D_l^v$  would be some complicated functions of the quark masses and bag radius. To examine the model, we take  $\vec{v} \rightarrow 0$  and Taylor expand the formulas regarding to  $M_Q$ , leading to<sup>1</sup>
+
+$$
+\begin{array}{l} \frac {1}{\mathcal {N} _ {\infty} ^ {2}} = 1 6 \pi^ {2} \int \left(D _ {l} ^ {0} (r _ {\Delta})\right) ^ {2} r _ {\Delta} ^ {2} d r _ {\Delta} \int_ {0} ^ {\sqrt {R ^ {2} - r _ {\Delta} ^ {2} / 4}} d \rho \rho \\ \times \int_ {0} ^ {\sqrt {R ^ {2} - r _ {\Delta} ^ {2} / 4} - r _ {\Delta} / 2} d z j _ {0} ^ {+} j _ {0} ^ {-}, \tag {32} \\ \end{array}
+$$
+
+with the abbreviations of  $j_{0,1}^{\pm} = j_{0,1}(\pi r_{\pm} / R),r_{\pm} = |\vec{x}\pm \vec{x}_{\Delta} / 2|$  and  $r_\Delta = |\vec{x}_\Delta |$  . In addition, with  $m_{u,d}\to 0$  , we are led to
+
+$$
+\begin{array}{l} D _ {l} ^ {0} \left(r _ {\Delta}\right) = 4 \pi \int_ {0} ^ {\sqrt {R ^ {2} - r _ {\Delta} ^ {2} / 4}} d \rho \rho \int_ {0} ^ {\sqrt {R ^ {2} - r _ {\Delta} ^ {2} / 4} - r _ {\Delta} / 2} d z \\ \times \left[ l _ {0} ^ {+} l _ {-} ^ {-} + \left(r ^ {2} - r _ {\Delta} ^ {2} / 4\right) l _ {1} ^ {+} l _ {1} ^ {-} \right], \tag {33} \\ \end{array}
+$$
+
+where  $l_{0,1}^{\pm} = j_{0,1}(2.043r_{\pm} / R)$ . From Eq. (31), the integrals are suppressed by the oscillations of the exponential functions, which depend heavily on  $E_{q}$ . In the case of  $\Lambda_b^0\to \Lambda^0\gamma$  the ambiguity in Eq. (26) causes the calculated branching fraction to vary from  $3.5\times 10^{-6}$  to  $1.0\times 10^{-5}$  [42]. However,  $E_{q}$  is always followed by  $\vec{v}$ , so its uncertainty does not affect the results at  $\vec{v} = 0$ . In this case,  $b_{1,2}$  are uncontaminated by the uncertainties of  $E_{q}$  as they are evaluated at  $\vec{v} = 0$ .
+
+The form factors of  $F_{1}^{V}$  and  $F_{1}^{A}$  are extracted by
+
+$$
+\begin{array}{l} F _ {1} ^ {V} (1) = \lim  _ {v \rightarrow 0} \frac {1}{v} \langle \Lambda_ {c} ^ {+} (\vec {v}) | (\bar {c} \gamma^ {1} b) (0) | \Lambda_ {b} ^ {0} (- \vec {v}) \rangle , \\ F _ {1} ^ {A} (1) = \lim  _ {v \rightarrow 0} \langle \Lambda_ {c} ^ {+} (\vec {v}) | (\bar {c} \gamma^ {1} \gamma_ {5} b) (0) | \Lambda_ {b} ^ {0} (- \vec {v}) \rangle , \tag {34} \\ \end{array}
+$$
+
+resulting in that
+
+$$
+\begin{array}{l} F _ {1} ^ {V} (1) = 1 + \left(\frac {1}{2 m _ {c}} + \frac {1}{2 m _ {c}}\right) E _ {\mathrm {d i}} \mathcal {N} _ {\infty} ^ {2} 4 \pi \\ \times \int r _ {\Delta} ^ {2} d r _ {\Delta} \mathcal {C} (r _ {\Delta}) (D _ {l} ^ {0} (r _ {\Delta})) ^ {2}, \\ \end{array}
+$$
+
+$$
+F _ {1} ^ {A} (1) = 1, \tag {35}
+$$
+
+where
+
+$$
+\begin{array}{l} \mathcal {C} \left(r _ {\Delta}\right) = \frac {4 \pi^ {2}}{3 R} \int_ {0} ^ {\sqrt {R ^ {2} - r _ {\Delta} ^ {2} / 4}} d \rho \rho \int_ {0} ^ {\sqrt {R ^ {2} - r _ {\Delta} ^ {2} / 4} - r _ {\Delta} / 2} d z \\ \times \left[ \left(j _ {0} ^ {+} j _ {1} ^ {-} \frac {1}{r _ {-}} + j _ {1} ^ {+} j _ {0} ^ {-} \frac {1}{r _ {+}}\right) r ^ {2} \right. \\ \left. + \left(j _ {0} ^ {-} j _ {1} ^ {+} \frac {r _ {\Delta} z}{2 r _ {+}} - j _ {1} ^ {-} j _ {0} ^ {+} \frac {r _ {\Delta} z}{2 r _ {-}}\right) \right], \tag {36} \\ \end{array}
+$$
+
+to the precision of  $\mathcal{O}(1 / m_c^2 R^2)$ . By matching it with Eq. (6), we find that the first order correction of  $F_{1}^{A}$  indeed vanishes, and
+
+$$
+C = \mathcal {N} _ {\infty} ^ {2} 4 \pi \int r _ {\Delta} ^ {2} d r _ {\Delta} \mathcal {C} \left(r _ {\Delta}\right) \left(D _ {l} ^ {0} \left(r _ {\Delta}\right)\right) ^ {2} = 1, \tag {37}
+$$
+
+which holds exactly by an actual calculation. It is a sensible result, since the zeroth order corrections of  $E_{Q}^{k}$  are absent as shown in Eq. (13), and the interactions among quarks are omitted. We conclude that the diquark energies are unaffected by the presence of the heavy quark at the zeroth order, namely  $C = 1$ . However, Eq. (37) itself is a nontrivial result, and it indicates that our treatments for the CMM are self-consistent.
+
+We emphasize that Eq. (37) is a parameter-independent result, which can be shown explicitly by changing the variables
+
+$$
+\left(\rho , z, \vec {x} _ {\Delta}\right)\rightarrow \left(\frac {\rho}{R}, \frac {z}{R}, \frac {\vec {x} _ {\Delta}}{R}\right), \tag {38}
+$$
+
+in Eqs. (36) and (37). To take account the recoil effects, we use the following trick:
+
+$$
+\xi (\omega) = \sum_ {i = 1, 2, 3} F _ {i} ^ {V} (\omega) | _ {\varepsilon_ {Q} = 0},
+$$
+
+$$
+\left. \xi_ {\mathrm {k e}} (\omega) = \frac {\partial}{\partial \varepsilon_ {c}} \left(\sum_ {i = 1, 2, 3} F _ {i} ^ {V} (\omega)\right) \right| _ {\varepsilon_ {Q} = 0}, \tag {39}
+$$
+
+where  $\sum_{i}F_{i}^{V}$  is evaluated by taking  $\Gamma = 1$  in Eq. (31). Consequently, we get
+
+$$
+\xi (\omega) = \mathcal {N} _ {\infty} ^ {2} \int d ^ {3} \vec {x} _ {\Delta} d ^ {3} \vec {x} (j _ {0} ^ {+} j _ {0} ^ {-}) e ^ {2 i E _ {\mathrm {d i}} \vec {v} \cdot \vec {x}} (D _ {l} ^ {0} (\vec {x} _ {\Delta})) ^ {2},
+$$
+
+$$
+\xi_ {\mathrm {k e}} (\omega) = A (\vec {v}) \bar {\Lambda} - A (0) \bar {\Lambda},
+$$
+
+$$
+\begin{array}{l} A (\vec {v}) \equiv \frac {\pi \mathcal {N} _ {\infty} ^ {2}}{R ^ {2}} \int d ^ {3} \vec {x} _ {\Delta} d ^ {3} \vec {x} (r _ {-} j _ {0} ^ {+} j _ {1} ^ {-} + r _ {+} j _ {1} ^ {+} j _ {0} ^ {-}) \\ \times e ^ {2 i E _ {\mathrm {d i}} \vec {v} \cdot \vec {x}} \left(D _ {l} ^ {0} \left(\vec {x} _ {\Delta}\right)\right) ^ {2}. \tag {40} \\ \end{array}
+$$
+
+By taking  $\vec{v} = 0$ , we get that  $\xi(1) = 1$  and  $\xi_{\mathrm{ke}}(1) = 0$  as demanded by the Luke's theorem.
+
+Similarly, the first order corrections of  $b_{2}$  and  $b_{2}$  are obtained, given by
+
+$$
+\left. \frac {\partial^ {2} F _ {1} ^ {V} (1)}{\partial \varepsilon_ {c} ^ {2}} \right| _ {\varepsilon_ {Q} = 0} = (b _ {1} - b _ {2}),
+$$
+
+$$
+\left. \frac {\partial^ {2} F _ {1} ^ {A} (1)}{\partial \varepsilon_ {c} ^ {2}} \right| _ {\varepsilon_ {Q} = 0} = b _ {1}, \quad \left. \frac {\partial^ {2} F _ {2} ^ {V , A} (1)}{\partial \varepsilon_ {c} ^ {2}} \right| _ {\varepsilon_ {Q} = 0} = b _ {2}. \tag {41}
+$$
+
+The operations can be easily done by a computer program. However, their expressions are much more complicated and lengthy as well, so we do not list them out here. As a cross-check, we compute
+
+$$
+\left. \frac {\partial^ {2}}{\partial \varepsilon_ {c} ^ {2}} \left(F _ {1} ^ {V} (\omega) - F _ {1} ^ {A} (\omega) + F _ {2} ^ {V, A} (\omega)\right) \right| _ {\varepsilon_ {Q} = 0}, \tag {42}
+$$
+
+which is indeed found to be zero, consistent with Eq. (6).
+
+We note that  $\xi, \xi_{\mathrm{ke}}$ , and  $b_{1,2}$  depend only on  $E_{\mathrm{di}}R$ , which is the only dimensionless parameter. To be specific, they are invariant under the transformation of  $(R,E_{\mathrm{di}})\rightarrow (a^{-1}R,aE_{\mathrm{di}})$ , where  $a$  is an arbitrary constant. For a practical purpose, we can fix  $R$  and vary  $E_{\mathrm{di}}$  solely to cover the model uncertainties on  $\bar{\Lambda}, \xi, \xi_{\mathrm{ke}}$ , and  $b_{1,2}$ .
+
+# B. Light-front quark model
+
+In the LFQM, the baryon states are expressed as
+
+$$
+\begin{array}{l} \left| \Lambda_ {Q}, \uparrow \right\rangle = \int \frac {1}{\sqrt {6}} \epsilon^ {\alpha \beta \gamma} u _ {\alpha} ^ {\dagger} (\tilde {p} _ {u}, \lambda_ {u}) d _ {\beta} ^ {\dagger} (\tilde {p} _ {d}, \lambda_ {d}) Q _ {\gamma} ^ {\dagger} (\tilde {p} _ {Q}, \lambda_ {Q}) \\ \times \Psi_ {Q} ^ {[ \lambda ]} \left(\tilde {p} _ {u}, \tilde {p} _ {d}, \tilde {p} _ {Q}\right) [ d ^ {3} \tilde {p} ] | 0 \rangle , \tag {43} \\ \end{array}
+$$
+
+where  $\Psi_Q^{[\lambda]}(\tilde{p}_u,\tilde{p}_d,\tilde{p}_Q)$  represent the vertex functions between the  $\Lambda_{Q}$  and  $udQ$ ,  $[\lambda]$  and  $[d^3\tilde{p}]$  stand for the light-front helicities  $(\lambda_u,\lambda_d,\lambda_Q)$  and light-front three-momentum integrals  $d^3\tilde{p}_ud^3\tilde{p}_dd^3\tilde{p}_Q$ , respectively, and
+
+$$
+p _ {q} = \left(p _ {q} ^ {-}, \tilde {p} _ {q}\right) = \left(p _ {q} ^ {-}, p _ {q} ^ {+}, p _ {q \perp}\right), \quad d ^ {3} \tilde {p} _ {q} \equiv \frac {d p _ {q} ^ {+} d ^ {2} p _ {q \perp}}{2 (2 \pi) ^ {3}}, \tag {44}
+$$
+
+with  $p_q^\pm = p_i^0 \pm p_q^3$  and  $p_{q\perp} = (p_q^1,p_q^2)$ . At the equal light-front time  $(x^{+} = 0)$ , the commutation relationships for  $q_{\alpha}^{\dagger}(\tilde{p}_{q},\lambda_{q})$  are
+
+$$
+\left\{q _ {\alpha} ^ {\dagger} \left(\tilde {p}, \lambda\right), q _ {\beta} \left(\tilde {p} ^ {\prime}, \lambda^ {\prime}\right) \right\} = \delta_ {\lambda \lambda^ {\prime}} \delta_ {\alpha \beta} \delta^ {3} \left(\tilde {p} - \tilde {p} ^ {\prime}\right). \tag {45}
+$$
+
+Notice that the wave functions are made of position eigenstates in the HBM shown in Eq. (20), whereas they are built out of momentum eigenstates here in contrast.
+
+The vertex functions are further decomposed as
+
+$$
+\begin{array}{l} \Psi_ {Q} ^ {[ \lambda ]} = 2 (2 \pi) ^ {3} \frac {1}{\sqrt {P ^ {+}}} \delta^ {3} (\tilde {P} - \tilde {p} _ {u} - \tilde {p} _ {d} - \tilde {p} _ {Q}) \\ \times \Phi (\tilde {p} _ {u}, \tilde {p} _ {d}, \tilde {p} _ {Q}) \Xi^ {1 / 2, \uparrow} (\lambda_ {u}, \lambda_ {d}, \lambda_ {Q}), \tag {46} \\ \end{array}
+$$
+
+where  $\Phi$  are the momentum distribution functions of the quarks,  $\Xi^{1/2,\uparrow}$  stands for the helicity wave function
+
+$$
+\Xi^ {1 / 2, \uparrow} \left(\lambda_ {u}, \lambda_ {d}, \lambda_ {Q}\right) = \sum_ {s _ {u}, s _ {d}, s _ {Q}} \prod_ {q} \left\langle \lambda_ {q} \right| R _ {q} ^ {\dagger} | s _ {q} \rangle \left\langle \frac {1}{2} s _ {u}, \frac {1}{2} s _ {d}, \frac {1}{2} s _ {Q} \right| S S _ {z} \rangle , \tag {47}
+$$
+
+and  $R_{q}$  is the Melosh matrix, which brings the quark from its spin state at rest to a light-front helicity state with momentum  $\tilde{p}_{q}$  [31].
+
+In this work, we consider the two-particle forces between the quarks, which are effectively described by the harmonic oscillator potentials
+
+$$
+V = \beta^ {4} r ^ {2} / (2 M), \tag {48}
+$$
+
+where  $r$  are the distances of the quarks, and  $M$  and  $\beta$  are the reduced masses and shape parameters, respectively, to be specified later. We take the quarks of  $u$  and  $d$  to form a diquark cluster denoted as  $[ud]$ , as they are (iso)spin singlet. By integrating out the delta functions  $\delta (\tilde{P} -\tilde{p}_u - \tilde{p}_d - \tilde{p}_Q)$ , Eqs. (43) and (46) can be rewritten as
+
+$$
+\left[ d ^ {3} \tilde {p} \right]\rightarrow d ^ {3} \vec {q} d ^ {3} \vec {Q}, \quad \Phi \left(\tilde {p} _ {u}, \tilde {p} _ {d}, \tilde {p} _ {Q}\right)\rightarrow \Phi (\vec {q}, \vec {Q}), \tag {49}
+$$
+
+where
+
+$$
+\begin{array}{l} \Phi (\vec {q}, \vec {Q}) = \phi_ {u d} \phi_ {Q [ u d ]} \\ = \left(\pi \beta_ {u d} \beta_ {Q [ u d ]}\right) ^ {- 3 / 2} \exp \left(- \frac {\vec {q} ^ {2}}{2 \beta_ {u d} ^ {2}} - \frac {\vec {Q} ^ {2}}{2 \beta_ {Q [ u d ]} ^ {2}}\right), \tag {50} \\ \end{array}
+$$
+
+$\phi_{ud}$  and  $\phi_{Q[ud]}$  are the wave functions of  $(u,d)$  and  $(Q,[ud])$  and the shape parameters of  $\beta_{ud}$  and  $\beta_{Q[ud]}$  are the typical relative three-momenta, respectively. Note that we have projected the light-front three-momenta to the instant forms by defining
+
+$$
+\begin{array}{l} x _ {Q} \equiv \frac {p _ {Q} ^ {+}}{P ^ {+}} = \frac {E _ {Q} - Q _ {z}}{E _ {u d} + E _ {Q}}, \\ Q _ {\perp} = x _ {Q} \left(p _ {u \perp} + p _ {d \perp}\right) - \left(1 - x _ {Q}\right) p _ {Q \perp}, \\ y \equiv \frac {p _ {u} ^ {+}}{p _ {u} ^ {+} + p _ {d} ^ {+}} = \frac {E _ {d} - q _ {z}}{E _ {u} + E _ {d}}, \\ q _ {\perp} = y p _ {u \perp} - (1 - y) p _ {d \perp}, \tag {51} \\ \end{array}
+$$
+
+where  $E_{u,d} = \sqrt{\vec{q}^2 + m^2}, \quad E_Q = \sqrt{\vec{Q}^2 + m_Q^2}, \quad E_{ud} = \sqrt{\vec{Q}^2 + (E_u + E_d)^2}$ , and  $m$  stands for the constituent quark masses of  $u$  and  $d$  in the LFQM.
+
+By utilizing that the potentials are independent of quark masses, we find
+
+$$
+\beta_ {Q [ u d ]} ^ {4} M _ {Q [ u d ]} ^ {- 1} = \beta_ {d [ u d ]} ^ {4} M _ {d [ u d ]} ^ {- 1} = \beta_ {u d} ^ {4} (m / 2) ^ {- 1}, \tag {52}
+$$
+
+where  $M_{q[ud]}$  is the reduced effective mass of  $q$  and  $[ud]$ , given as
+
+$$
+M _ {q [ u d ]} ^ {- 1} = m _ {q} ^ {- 1} + E _ {\mathrm {d i}} ^ {- 1}. \tag {53}
+$$
+
+The second equality in Eq. (52) comes from the Isgur-Karl model for the equal mass scenario [44]. By considering the well-measured ratio of  $g_{A} / g_{V} = -1.275$  from the neutron beta decay, we get
+
+$$
+\beta_ {d [ u d ]} = 0. 9 5 2 m. \tag {54}
+$$
+
+To the precision of  $\mathcal{O}(m_Q^{-2})$ , we have
+
+$$
+\beta_ {Q [ u d ]} = \left(1 - \frac {E _ {\mathrm {d i}}}{4 m _ {Q}} + \mathcal {O} \left(\frac {1}{m _ {Q} ^ {2}}\right)\right) \beta_ {\infty},
+$$
+
+$$
+\beta_ {\infty} = \left(1 + E _ {\mathrm {d i}} / m\right) ^ {1 / 4} \beta_ {d [ u d ]}. \tag {55}
+$$
+
+The existence of the heavy quark limit for  $\beta_{\infty}$  has already been discussed and put by hand in Refs. [21,22]. Here, we provide a clear theoretical background to justify their assumptions.
+
+Now, we are ready to compute  $\bar{\Lambda}, b_{1,2}, \xi(\omega)$ , and  $\xi_{\mathrm{ke}}(\omega)$ . We choose the frame of  $q^{+} = 0$  to avoid the  $Z$ -graph contribution [36]. We set  $m_b = m_c / x = m_Q$ . At  $q^2 = 0$ ,  $\omega$  corresponds to
+
+$$
+\omega (x) = \frac {M _ {Q} ^ {2} + M _ {Q x} ^ {2}}{2 M _ {Q} M _ {Q x}}, \tag {56}
+$$
+
+with
+
+$$
+M _ {Q (x)} = (x) m _ {Q} + \bar {\Lambda} + \frac {\lambda_ {1}}{(x) 2 m _ {Q}}, \tag {57}
+$$
+
+from Eq. (9), leading to
+
+$$
+\xi (\omega (x)) = f _ {1} (q ^ {2} = 0, \quad x, \varepsilon_ {Q} \rightarrow 0),
+$$
+
+$$
+\left(\frac {1}{x} + 1\right) \xi_ {\mathrm {k e}} (\omega (x)) = \frac {\partial}{\partial \varepsilon_ {Q}} f _ {1} \left(q ^ {2} = 0, x, \varepsilon_ {Q} \rightarrow 0\right). \tag {58}
+$$
+
+In reality, we have that  $x \approx 3$  and  $\lambda_{1} = -0.5 \mathrm{GeV}^{2}$ , corresponding to  $\omega = 1.43$ . Since  $q^{2} = q^{+}q^{-} - q_{\perp}^{2}$ , the region of  $q^{2} > 0$  is polluted by the Z-graph contribution. Nevertheless, we utilize the fact that  $\xi(\omega)$  and  $\xi_{\mathrm{ke}}(\omega)$  are independent of  $m_{b,c}$  for a fix  $\omega$ . In practice, we can obtain the  $\omega$  dependencies of  $\xi(\omega)$  and  $\xi_{\mathrm{ke}}(\omega)$  by varying  $x$ .
+
+For  $\bar{\Lambda}$  and  $b_{1,2}$ , we again use the trick that they are independent of  $m_{b,c}$ . We compute them with  $x = 1$ . Accordingly,  $g_{1}$  and  $f_{2}$  are expanded as
+
+$$
+g _ {1} = 1 + \frac {g _ {1} ^ {(2)}}{m _ {Q} ^ {2}} + \mathcal {O} (1 / m _ {Q} ^ {3}),
+$$
+
+$$
+f _ {2} = \frac {f _ {2} ^ {(1)}}{m _ {Q}} + \frac {f _ {2} ^ {(2)}}{m _ {Q} ^ {2}} + \mathcal {O} \left(1 / m _ {Q} ^ {3}\right), \tag {59}
+$$
+
+where
+
+$$
+g _ {1} ^ {(2)} = - \frac {\beta_ {\infty} ^ {2}}{2}, \quad f _ {2} ^ {(1)} = \int d ^ {3} \vec {q} d ^ {3} \vec {Q} | \Phi_ {\infty} | ^ {2} \frac {E _ {u d}}{2},
+$$
+
+$$
+f _ {2} ^ {(2)} = \int d ^ {3} \vec {q} d ^ {3} \vec {Q} | \Phi_ {\infty} | ^ {2} \frac {E _ {u d}}{8 \beta_ {\infty} ^ {2}} \left[ 7 E _ {\mathrm {d i}} \beta_ {\infty} ^ {2} - 4 E _ {u d} \beta_ {\infty} ^ {2} - 2 E _ {\mathrm {d i}} Q ^ {2} \right], \tag {60}
+$$
+
+and  $\Phi_{\infty}$  is the momentum wave function under the heavy quark limit, given as
+
+$$
+\Phi_ {\infty} (\vec {q}, \vec {Q}) = \left(\pi \beta_ {u d} \beta_ {\infty}\right) ^ {- 3 / 2} \exp \left(- \frac {\vec {q} ^ {2}}{2 \beta_ {u d} ^ {2}} - \frac {\vec {Q} ^ {2}}{2 \beta_ {\infty} ^ {2}}\right). \tag {61}
+$$
+
+Note that the zeroth order of  $g_{1}$  is consistent with the heavy quark symmetry, which is a nontrivial result.
+
+To match Eqs. (5) and (6) to Eqs. (59) and (60) with  $x = 1$ , there would be extra crossing terms at the order of  $\varepsilon_c\varepsilon_b$  in Eq. (6), which introduce two additional free parameters. To eliminate them, we assume that  $F_{1}^{V,A}(\omega)$  are factorized as
+
+$$
+F _ {1} ^ {V (A)} \left(\varepsilon_ {b}, \varepsilon_ {c}, \omega\right) = f ^ {V (A)} \left(\varepsilon_ {c}, \omega\right) f ^ {V (A)} \left(\varepsilon_ {b}, \omega\right), \tag {62}
+$$
+
+with  $f^{V,A}(\varepsilon_Q,\omega)$  to be determined. Now we have
+
+$$
+\bar {\Lambda} = 2 f _ {2} ^ {(1)}, \quad \bar {b} _ {1} = 2 g _ {1} ^ {(2)}, \quad \bar {b} _ {2} = 2 \left(f _ {2} ^ {(1)}\right) ^ {2} - 4 f _ {2} ^ {(2)} + 2 g _ {1} ^ {(2)}, \tag {63}
+$$
+
+where  $\bar{b}_{1,2} \equiv b_{1,2}\bar{\Lambda}^2$ .
+
+From Eqs. (52), (60), and (61), we see that  $f_2^{(1)}$  depends only on  $E_{\mathrm{di}}$  and  $m$ . We arrive at
+
+$$
+f _ {2} ^ {(1)} \left(E _ {\mathrm {d i}}, m\right) = E _ {\mathrm {d i}} \mathcal {F} \left(E _ {\mathrm {d i}}, m\right) = E _ {\mathrm {d i}} \mathcal {F} \left(\frac {E _ {\mathrm {d i}}}{m}\right), \tag {64}
+$$
+
+where  $\mathcal{F}$  is a function to be determined, and the second equality comes from that  $\mathcal{F}$  can only depends on the dimensionless quantities, i.e.,  $E_{\mathrm{di}} / m$  in this case. By demanding the heavy quark limit of  $\bar{\Lambda} = E_{\mathrm{di}}$  or equivalently  $\mathcal{F} = 1 / 2$ , we find
+
+$$
+E _ {\mathrm {d i}} = 3. 2 9 3 \mathrm {m}. \tag {65}
+$$
+
+Collecting Eqs. (52), (60), (61), and (65), we see that only  $m$  remains unfixed.
+
+In the LFQM, the HQE parameters depend on  $m$ ,  $E_{\mathrm{di}}$ ,  $\beta_{\infty}$
+
+$$
+h \left(m, E _ {\mathrm {d i}}, \beta_ {\infty}\right) = h \left(m, 3. 2 9 3 m, 0. 9 5 2 m\right) = h (m), \tag {66}
+$$
+
+where  $h\in \{\xi (\omega),\xi_{\mathrm{ke}}(\omega),b_1,b_2\}$  , and we have used Eqs. (54) and (65).
+
+From the dimensional analysis, we find that
+
+$$
+h (m) = \sum_ {n = - \infty} ^ {\infty} h _ {n} ^ {\prime} m ^ {n}, \tag {67}
+$$
+
+where  $h_n'$  has  $-n$  mass dimension. However, there is no other parameter with mass dimension, so we must have  $h_n' = 0$  for  $n \neq 0$ . Consequently,  $h$  do not depend on  $m$  and are parameter-independent results in our approach. From Eqs. (60) and (63), we have
+
+$$
+b _ {1} = - 0. 1 7 3, \quad b _ {2} = 0. 5 1 8, \tag {68}
+$$
+
+while  $\xi$  and  $\xi_{\mathrm{ke}}$  are shown in Fig. 3. By a similar argument, we find  $\bar{\Lambda} \propto m$ .
+
+# III. NUMERICAL RESULTS
+
+In both of the models,  $m_{b,c}$  are taken as the pole quark masses with  $m_{b,c} = (4.78, 1.655)$  GeV, and the adopted value of the Cabibbo-Kobayashi-Maskawa (CKM) matrix element is  $|V_{cb}| = (42.2 \pm 0.7) \times 10^{-3}$  from the inclusive semileptonic  $B$  decays [45]. The formalism of the decay widths can be found in Ref. [46].
+
+For the HBM, we fix  $R = 4.8 \mathrm{GeV}^{-1}$  without lost of generality as explained in the end of Sec. II A. From Eq. (26), the reasonable range of  $E_{\mathrm{di}}$  is then given as
+
+$$
+0. 5 8 5 \mathrm {G e V} <   E _ {\mathrm {d i}} <   0. 6 8 6 \mathrm {G e V}, \tag {69}
+$$
+
+![](images/538342f9afcbaf6bfb9d54b6b140384f9fc70022c0ff1f70ad8ecdd1453254b2.jpg)  
+FIG. 3. The Isgure-Wise function and its first order correction from the LFQM.
+
+![](images/e02fc8d0c50ccd82510f49cef70612fa79f535baf9ee3c4f8cb127141b918bae.jpg)
+
+which is consistent with Eq. (19). For the LFQM, we take  $m = 0.30 \pm 0.08$  GeV, which is consistent with the experiments of the nucleon magnetic moments and  $\mathcal{B}(\Lambda_b^0 \to \Lambda^0\gamma) = (7.1 \pm 1.7) \times 10^{-6}$  [45,47]. To be conservative, we allow  $m$  to vary in a wide range, which shall cover all the reasonable values.
+
+The HQE parameters are computed with the formula given in Sec. II. The Isgur-Wise function and its first order correction of the HBM are given in Fig. 4. Notice that the region of  $\omega > 1.43$  is equivalent to  $q^2 < 0$ , and thus, it is irrelevant to  $\Lambda_b^0 \to \Lambda_c^+ \ell^- \bar{\nu}_\ell$ . Nevertheless, we have plotted them in the figures to see the dependencies in the high  $\omega$  region, as they are physical in the scattering processes.
+
+To compare the results with those in the literature, we expand the Isgur-Wise function regarding to  $\omega$  to the fourth order, given as
+
+$$
+\begin{array}{l} \bar {\xi} (\omega) = 1 + \bar {\xi} ^ {(1)} (\omega - 1) + \frac {1}{2} \bar {\xi} ^ {(2)} (\omega - 1) ^ {2} + \frac {1}{3 !} \bar {\xi} ^ {(3)} (\omega - 1) ^ {3} \\ + \frac {1}{4 !} \bar {\xi} ^ {(4)} (\omega - 1) ^ {4}. \tag {70} \\ \end{array}
+$$
+
+The numerical results along with those in the literature are collected in Table I. In the literature, Ref. [16] fits the HQE parameters from the experimental data [14] and LQCD calculations [15], Ref. [48] adopts the relativistic quark
+
+model (RQM), Refs. [49,50] employ the light-cone sum rule (LCSR), and Ref. [51] utilizes the QCD sum rule (QCDSR).
+
+We note that the authors of Ref. [52] have also considered the LFQM but with a different theoretical setup. On the one hand, their baryon wave functions are fitted from the mass spectroscopy with 13 free parameters, whereas ours are based on the simple harmonic potential and HQE with one free parameter only. On the other hand, their form factors and Isgur-Wise function in the timelike region are obtained by the analytical continuation, where the dipole behavior is assumed. In our approach, we have mapped the dependency of  $\omega$  to  $x = m_c / m_b$  so that the Isgur-Wise function is directly evaluated in the entire phase space without further ad-hoc assumptions. To sum up, we have shown that after considering the HQE, not only the parameter space of the LFQM is tightly constraint but also the ad hoc assumption of the analytical continuation is no longer needed.
+
+Surprisingly, the results in the HBM and LFQM agree well with each other, even though they are two very different quark models. Our values of  $\bar{\xi}^{(1)}$  also agree well with those from the LHCb and LQCD, but significantly larger than the results from the RQM and QCDSR. Note that in Ref. [16],  $\bar{\xi}^{(3)}$  and  $\bar{\xi}^{(4)}$  have been omitted. On the contrary, we find that they are sizable. In particular,  $\bar{\xi}^{(3)}$  is
+
+![](images/6267ab68beec1cb4f6110f9fa966f173bbccd3f68d9451b31e53b52436a7af16.jpg)  
+FIG. 4. The Isgure-Wise function and its first order correction from the HBM.
+
+![](images/05efddb26a2bb37d4c1d0c25e7a0c68c529c71cdb768333b256e01032d49e3a0.jpg)
+
+TABLE I. The HQE parameters with  $\bar{\Lambda }$  and  ${\bar{b}}_{1,2}$  in units of GeV and  ${\mathrm{{GeV}}}^{2}$  ,respectively.  
+
+<table><tr><td></td><td>HBM</td><td>LFQM</td><td>LHCb [14,16]</td><td>LQCD + LHCb [16]</td><td>RQM [48]</td><td>QCDSR [51]</td><td>LFQM [52]</td></tr><tr><td>ξ(1)</td><td>-1.94(26)</td><td>-2.35(10)</td><td>-2.17(26)</td><td>-2.04(8)</td><td>-1.51</td><td>-1.35(13)</td><td>1.67(11)</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1.85(11)</td></tr><tr><td>ξ(2)</td><td>4.78(93)</td><td>5.75(55)</td><td>4.10(105)</td><td>3.16(38)</td><td>4.06</td><td></td><td>2.45(63)</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3.25(61)</td></tr><tr><td>ξ(3)</td><td>-10.8(25)</td><td>-10.5(21)</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ξ(4)</td><td>13.1(32)</td><td>10.1(38)</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ξ(1.43)</td><td>0.470(43)</td><td>0.392(15)</td><td>0.446(4)</td><td>0.415(1)</td><td></td><td></td><td></td></tr><tr><td>Λ</td><td>0.681(55)</td><td>0.988(263)</td><td>0.81(5)a</td><td>0.81(5)a</td><td>0.764</td><td></td><td></td></tr><tr><td>b1</td><td>-0.141(1)</td><td>-0.181(90)</td><td>0.24(192)</td><td>-0.46(15)</td><td></td><td></td><td></td></tr><tr><td>b2</td><td>0.351(35)</td><td>0.541(270)</td><td>0.45(188)</td><td>-0.39(39)</td><td></td><td></td><td></td></tr></table>
+
+aExtracted from  $M_{\Lambda_o}$  , where 0.81(5) means  $0.81\pm 0.05$
+
+opposite in sign and twice larger in comparison to  $\bar{\xi}^{(2)}$ . Although our results of  $\bar{\xi}^{(2)}$  are larger than the values from the LHCb and LQCD, those of  $\xi (\omega = 1.43)$  are consistent with them due to the presences of  $\bar{\xi}^{(3)}$ .
+
+Note that our values of  $\bar{b}_{1,2}$  from the LFQM are contaminated by the uncertainties of  $\bar{\Lambda}$ , but their signs are not. Explicitly, both models give  $\bar{b}_1 < 0$  and  $\bar{b}_2 > 0$ . The predicted sign of  $\bar{b}_2$  is opposite to the one of LHCb + LQCD. As the HBM and LFQM show well consistence in all the HQE parameters, we are confident on these results.
+
+To see the hard gluon effects, we adopt two different schemes for the form factors. In the first one, we calculate them directly from the quark models. In the second one, we plug the values of  $\bar{\Lambda}$ ,  $b_{1}$ ,  $b_{2}$ , and  $\bar{\xi}(\omega)$  from Table I into Eq. (8). The branching fractions along with those in the literature are collected in Table II, where the lower and upper columns in the HBM and LFQM for each lepton pair are the values with and without the hard gluon corrections,
+
+respectively, which decrease the branching fractions about  $10\%$ . The branching fractions in Table II are consistent with the experimental data and those in literature, where the uncertainties of our results are smaller than those of other approaches with uncertainties provided.
+
+Beside the integrated branching fractions, the differential decay distributions and other angular observables also provide additional ways to probe the form factors. They are well discussed in Ref. [12]. For the sake of simplicity, the values of the angular observables have not been given in this work. We point out that it is possible to fully reconstruct the form factors from the angular observables in the experiments, which is demonstrated explicitly in Ref. [54].
+
+To further test the lepton universality, we compute the ratio of  $R_{\Lambda_c}$ , given in Table III and Fig. 5, where  $R_{\Lambda_c}(\mathrm{LQCD})$  come from two different works, in which the upper column is purely from the LQCD calculations [15], while the lower column corresponds to the one in
+
+TABLE II. The branching fractions of  $\Lambda_b^0\to \Lambda_c^+\to \ell^-{\bar{\nu}}_\ell$  in units of  $\%$  , where the lower and upper columns in the HBM and LFQM for each lepton pair correspond to the values with and without the hard gluon corrections, respectively.  
+
+<table><tr><td>Lepton pair</td><td>HBM</td><td>LFQM</td><td>Exp [45]</td><td>RQM [53]</td><td>LFQM [52]</td><td>LCSR [49]</td><td>LCSR [50]</td></tr><tr><td rowspan="2">e-ν</td><td>6.23(58)</td><td>5.53(77)</td><td>6.2+1.4</td><td>6.48</td><td>6.47(96)</td><td>5.81</td><td>5.71(98)</td></tr><tr><td>5.69(58)</td><td>5.35(50)</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan="2">μ-ν</td><td>6.21(57)</td><td>5.52(77)</td><td>6.2+1.4</td><td>6.46</td><td>6.45(95)</td><td>5.78</td><td>5.69(98)</td></tr><tr><td>5.67(58)</td><td>5.33(49)</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan="2">τ-ν</td><td>1.95(11)</td><td>1.91(23)</td><td>1.5(4)</td><td>2.03</td><td>1.97(29)</td><td>1.55</td><td>1.66(26)</td></tr><tr><td>1.83(12)</td><td>1.87(15)</td><td></td><td></td><td></td><td></td><td></td></tr></table>
+
+TABLE III. Comparisons of  ${R}_{\Delta }$  in different approaches.  
+
+<table><tr><td>HBM</td><td>LFQM</td><td>LQCD [15,16]</td><td>LHCb [14]</td><td>LFQM [52]</td><td>LCSR [50]</td></tr><tr><td>0.3154(109)</td><td>0.3457(70)</td><td>0.3328(102)</td><td>0.242(76)</td><td>0.30(9)</td><td>0.292</td></tr><tr><td>0.3243(126)</td><td>0.3506(46)</td><td>0.3237(36)</td><td></td><td></td><td></td></tr></table>
+
+![](images/0b5e8c7214dd55e74c97464c7fa3fbb4cb3bb08bb8a319fa617c7bc1877f975e.jpg)  
+FIG. 5. The comparison of  $R_{\Lambda_c}$ .
+
+which the heavy quark symmetry is imposed to lower the uncertainties [16]. The predictions of the HBM fit well with the experimental data, but the ones of the LFQM disagree with the LHCb results in contrast.
+
+# IV. CONCLUSION
+
+We have examined the heavy quark symmetry in the HBM and LFQM. The inputs of the HBM are fixed from the mass spectra, while the parameters in the LFQM are tightly constrained by the heavy quark symmetry. We have
+
+demonstrated that the two models all respect the heavy quark symmetry.
+
+The HQE parameters of  $\bar{\Lambda}, b_{1,2}, \xi(\omega)$ , and  $\xi_{\mathrm{ke}}(\omega)$  have been computed. Our results of  $\bar{\Lambda}, \bar{\xi}(\omega)$ , and  $b_{1}$  are compatible with those in the literature, but the sign of  $b_{2}$  is opposite comparing to the LHCb + LQCD results. Explicitly, we have shown that  $(b_{1}, b_{2}) = (-0.173, 0.518)$  from the LFQM, and  $(\bar{b}_{1}, \bar{b}_{2}) = (-0.141 \pm 0.001, 0.351 \pm 0.035)$  from the HBM in units of  $\mathrm{GeV}^2$ .
+
+We have also calculated  $\mathcal{B}(\Lambda_b^0\to \Lambda_c^+\ell^{-}\bar{\nu}_\ell)$  and  $R_{\Lambda_c}$  with and without the hard gluon corrections. We have found that the hard gluon corrections decrease the branching fractions about  $10\%$ . Explicitly, we have obtained that  $\mathcal{B}(\Lambda_b^0\to \Lambda_c^+ e^- \bar{\nu}_e) = (5.69\pm 0.58,5.35\pm 0.50)$ ,  $\mathcal{B}(\Lambda_b^0\to \Lambda_c^+\mu^{-}\bar{\nu}_\mu) = (5.67\pm 0.58,5.33\pm 0.49)$ , and  $R_{\Lambda_c} = (0.3243\pm 0.0126,0.3506\pm 0.0046)$ , for the results of (HBM, LFQM), respectively. Our predicted values of the branching fractions show good consistencies with the experimental data of results  $\mathcal{B}(\Lambda_b^0\to \Lambda_c^+ e^- \bar{\nu}_e,\tau^{-}\bar{\nu}_\tau) = (6.2_{-1.3}^{+1.4},1.5\pm 0.4)\%$
+
+# ACKNOWLEDGMENTS
+
+This work is supported in part by the National Key Research and Development Program of China under Grant No. 2020YFC2201501 and the National Natural Science Foundation of China (NSFC) under Grant No. 12147103.
+
+[1] R. Aaij et al. (LHCb Collaboration), Nat. Phys. 18, 277 (2022).  
+[2] The LHCb Collaboration, arXiv:2209.09846.  
+[3] S. Iguro, T. Kitahara, and R. Watanabe, arXiv:2210.10751.  
+[4] S. Choudhury (Belle Collaboration), Springer Proc. Phys. 277, 231 (2022).  
+[5] Y.B. Li et al. (Belle Collaboration), Phys. Rev. D 105, L091101 (2022).  
+[6] J. H. Sheng, J. Zhu, X. N. Li, Q. Y. Hu, and R. M. Wang, Phys. Rev. D 102, 055023 (2020).  
+[7] N. Das and R. Dutta, J. Phys. G 47, 115001 (2020).  
+[8] J. Zhang, X. An, R. Sun, and J. Su, Eur. Phys. J. C 79, 863 (2019).  
+[9] S. Groote, M. A. Ivanov, J. G. Körner, V. E. Lyubovitskij, P. Santorelli, and C. T. Tran, Phys. Rev. D 103, 093001 (2021).  
+[10] K. Azizi and J. Y. Sungü, Phys. Rev. D 97, 074007 (2018).  
+[11] E. Di Salvo, F. Fontanelli, and Z. J. Ajaltouni, Int. J. Mod. Phys. A 33, 1850169 (2018).  
+[12] T. Gutsche, M. A. Ivanov, J. G. Korner, V. E. Lyubovitskij, P. Santorelli, and N. Habyl, Phys. Rev. D 91, 074001 (2015); 91, 119907(E) (2015).  
+[13] R. Aaij et al. (LHCb Collaboration), Phys. Rev. Lett. 128, 191803 (2022).
+
+[14] R. Aaij et al. (LHCb Collaboration), Phys. Rev. D 96, 112005 (2017).  
+[15] W. Detmold, C. Lehner, and S. Meinel, Phys. Rev. D 92, 034503 (2015).  
+[16] F. U. Bernlochner, Z. Ligeti, D. J. Robinson, and W. L. Sutcliffe, Phys. Rev. Lett. 121, 202001 (2018); Phys. Rev. D 99, 055008 (2019).  
+[17] Y. Amhis et al. (HFLAV Collaboration), arXiv:2206.07501.  
+[18] G. Martinelli, M. Naviglio, S. Simula, and L. Vittorio, EPJ Web Conf. 270, 00015 (2022).  
+[19] F. Schlumpf, Phys. Rev. D 47, 4114 (1993); 49, 6246(E) (1994).  
+[20] H. Y. Cheng, C. Y. Cheung, and C. W. Hwang, Phys. Rev. D 55, 1559 (1997).  
+[21] H. Y. Cheng, C. K. Chua, and C. W. Hwang, Phys. Rev. D 70, 034007 (2004).  
+[22] H. W. Ke, X. Q. Li, and Z. T. Wei, Phys. Rev. D 77, 014020 (2008).  
+[23] H. W. Ke, X. H. Yuan, X. Q. Li, Z. T. Wei, and Y. X. Zhang, Phys. Rev. D 86, 114005 (2012).  
+[24] W. Wang, F. S. Yu, and Z. X. Zhao, Eur. Phys. J. C 77, 781 (2017).  
+[25] C. Q. Geng, C. W. Liu, Z. Y. Wei, and J. Zhang, Phys. Rev. D 105, 073007 (2022).
+
+[26] Z. X. Zhao, arXiv:2204.00759.  
+[27] L. Chen, Y. W. Ren, L. T. Wang, and Q. Chang, Eur. Phys. J. C 82, 451 (2022).  
+[28] Q. Chang, X. N. Li, X. Q. Li, F. Su, and Y. D. Yang, Phys. Rev. D 98, 114018 (2018).  
+[29] C. K. Chua, Phys. Rev. D 100, 034025 (2019).  
+[30] P. A. M. Dirac, Rev. Mod. Phys. 21, 392 (1949).  
+[31] K. Y. J. Chiu and S. J. Brodsky, Phys. Rev. D 95, 065035 (2017).  
+[32] P. J. O'Donnell, Q. P. Xu, and H. K. K. Tung, Phys. Rev. D 52, 3966 (1995).  
+[33] S. Simula, Phys. Lett. B 373, 193 (1996).  
+[34] F. Cardarelli and S. Simula, Phys. Lett. B 421, 295 (1998).  
+[35] N. B. Demchuk, J. High Energy Phys. 08 (1998) 008.  
+[36] H. M. Choi and C. R. Ji, Phys. Rev. D 58, 071901 (1998); 72, 013004 (2005).  
+[37] H. M. Choi and C. R. Ji, Phys. Lett. B 696, 518 (2011).  
+[38] H. M. Choi and C. R. Ji, Few Body Syst. 52, 409 (2012); 55, 435 (2014).  
+[39] A. F. Falk and M. Neubert, Phys. Rev. D 47, 2982 (1993).  
+[40] T. A. DeGrand, R. L. Jaffe, K. Johnson, and J. E. Kiskis, Phys. Rev. D 12, 2060 (1975).  
+[41] C. Q. Geng, C. W. Liu, and T. H. Tsai, Phys. Rev. D 102, 034033 (2020).  
+[42] C. W. Liu and C. Q. Geng, arXiv:2205.08158.
+
+[43] H. Y. Cheng and F. Xu, Phys. Rev. D 105, 094011 (2022); H. Y. Cheng, C. W. Liu, and F. Xu, Phys. Rev. D 106, 093005 (2022).  
+[44] N. Isgur and G. Karl, Phys. Rev. D 18, 4187 (1978).  
+[45] P. A. Zyla et al. (Particle Data Group), Prog. Theor. Exp. Phys. 2020, 083C01 (2020); A. Vafaee, K. Javidan, and S. Atashbar Tehrani, arXiv:1806.07995.  
+[46] C. Q. Geng, X. N. Jin, and C. W. Liu, Phys. Rev. D 106, 053006 (2022).  
+[47] R. Aaij et al. (LHCb Collaboration), Phys. Rev. Lett. 123, 031801 (2019).  
+[48] D. Ebert, R. N. Faustov, and V. O. Galkin, Phys. Rev. D 73, 094002 (2006).  
+[49] Y. Miao, H. Deng, K. S. Huang, J. Gao, and Y. L. Shen, Chin. Phys. C 46, 113107 (2022).  
+[50] H. H. Duan, Y. L. Liu, and M. Q. Huang, Eur. Phys. J. C 82, 951 (2022).  
+[51] M. Q. Huang, H. Y. Jin, J. G. Korner, and C. Liu, Phys. Lett. B 629, 27 (2005).  
+[52] Y. S. Li, X. Liu, and F. S. Yu, Phys. Rev. D 104, 013005 (2021).  
+[53] R. N. Faustov and V. O. Galkin, Phys. Rev. D 94, 073008 (2016); 98, 093006 (2018).  
+[54] M. Ablikim et al. (BESIII Collaboration), Phys. Rev. Lett. 129, 231803 (2022).

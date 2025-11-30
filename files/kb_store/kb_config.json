@@ -1,0 +1,14 @@
+{
+  "model_name": "text-embedding-3-large",
+  "provider": "openai",
+  "chunk_size": 800,
+  "last_updated": "2025-11-30T00:20:23.040960+00:00",
+  "sources": [
+    "/Users/zhangjiabao/Projects/LLM_Dev/ChatPDFv3/files/kb_store/sources/CPC48.8.2024_20251130081936/full.md",
+    "/Users/zhangjiabao/Projects/LLM_Dev/ChatPDFv3/files/kb_store/sources/EPJC2023.83.973_20251130081940/full.md",
+    "/Users/zhangjiabao/Projects/LLM_Dev/ChatPDFv3/files/kb_store/sources/PhysRevD.105.073007_20251130081943/full.md",
+    "/Users/zhangjiabao/Projects/LLM_Dev/ChatPDFv3/files/kb_store/sources/PhysRevD.107.033004_20251130081946/full.md",
+    "/Users/zhangjiabao/Projects/LLM_Dev/ChatPDFv3/files/kb_store/sources/PhysRevD.107.033008_20251130081949/full.md"
+  ],
+  "documents_processed": 5
+}

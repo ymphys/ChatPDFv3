@@ -8,6 +8,7 @@ from typing import Optional, Sequence
 from ..config import get_settings
 from ..core import deepseek_interpretation
 from ..logging import configure_logging
+from ..review import ReviewPipeline
 from ..services import process_pdf_via_mineru, process_local_files_via_mineru, process_urls_via_mineru, get_batch_results
 from ..utils import read_md_content
 
@@ -125,6 +126,53 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
         help="Directory used to persist the knowledge base (default: <files_root>/kb_store).",
     )
 
+    review_parser = subparsers.add_parser(
+        "review",
+        help="Generate a literature review from the existing knowledge base",
+    )
+    review_parser.add_argument(
+        "--kb-path",
+        help="Directory used to persist the knowledge base (default: <files_root>/kb_store).",
+    )
+    review_parser.add_argument(
+        "--clusters",
+        type=int,
+        default=5,
+        help="Number of topic clusters to discover (default: 5).",
+    )
+    review_parser.add_argument(
+        "--llm-model",
+        default="deepseek-chat",
+        help="LLM model used for outline and drafting (default: deepseek-chat).",
+    )
+    review_parser.add_argument(
+        "--outline-temperature",
+        type=float,
+        default=0.3,
+        help="Sampling temperature for outline generation (default: 0.3).",
+    )
+    review_parser.add_argument(
+        "--draft-temperature",
+        type=float,
+        default=0.4,
+        help="Sampling temperature for draft generation (default: 0.4).",
+    )
+    review_parser.add_argument(
+        "--refine",
+        action="store_true",
+        help="Refine the draft with RAG citations from the KB.",
+    )
+    review_parser.add_argument(
+        "--refine-top-k",
+        type=int,
+        default=3,
+        help="Chunks retrieved per paragraph during refinement (default: 3).",
+    )
+    review_parser.add_argument(
+        "--output",
+        help="Optional path to save topic summaries, outline, and review markdown.",
+    )
+
     return parser.parse_args(args=argv)
 
 
@@ -141,6 +189,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if args.command == "kb":
         return _handle_kb_command(args, settings)
+    if args.command == "review":
+        return _handle_review_command(args, settings)
 
     # Handle batch ID query
     if args.batch_id:
@@ -277,6 +327,37 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     return 0
 
 
+def _handle_review_command(args: argparse.Namespace, settings) -> int:
+    if args.clusters <= 0:
+        raise ValueError("--clusters must be positive")
+
+    kb_path = _resolve_kb_path(args, settings)
+    logger = logging.getLogger("chatpdf")
+    logger.info("Starting literature review generation from KB: %s", kb_path)
+
+    pipeline = ReviewPipeline(kb_path=kb_path, llm_model=args.llm_model)
+    topics = pipeline.discover_topics(args.clusters)
+    summaries = pipeline.summarize_topics(topics)
+    outline = pipeline.generate_outline(
+        summaries,
+        temperature=args.outline_temperature,
+    )
+    draft = pipeline.generate_review(
+        outline=outline,
+        temperature=args.draft_temperature,
+    )
+    if args.refine:
+        draft = pipeline.refine_with_rag(draft=draft, top_k=args.refine_top_k)
+
+    _print_review_results(summaries, outline, draft)
+
+    if args.output:
+        _save_review_output(args.output, summaries, outline, draft)
+
+    logger.info("Review generation completed")
+    return 0
+
+
 def _handle_kb_command(args: argparse.Namespace, settings) -> int:
     try:
         from ..knowledge_base import (  # type: ignore import-not-found
@@ -363,6 +444,44 @@ def _save_answer_markdown(destination: str, question: str, answer: str) -> None:
         output_path.write_text(header + block, encoding="utf-8")
     logger = logging.getLogger("chatpdf")
     logger.info("Answer saved to %s", output_path)
+
+
+def _print_review_results(summaries: list[dict], outline: str, draft: str) -> None:
+    print("=== 主题摘要 ===")
+    for summary in summaries:
+        cluster_id = summary.get("cluster_id")
+        papers = ", ".join(summary.get("papers", [])) or "未知来源"
+        print(f"[主题 {cluster_id}] {papers}")
+        print(summary.get("summary", "无摘要"))
+        print()
+
+    print("=== 综述大纲 ===")
+    print(outline.strip(), "\n")
+
+    print("=== 综述草稿 ===")
+    print(draft.strip())
+
+
+def _save_review_output(destination: str, summaries: list[dict], outline: str, draft: str) -> None:
+    output_path = Path(destination).expanduser()
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    parts: list[str] = ["# 文献综述生成结果", "## 主题摘要"]
+    for summary in summaries:
+        papers = ", ".join(summary.get("papers", [])) or "未知来源"
+        parts.append(
+            f"### 主题 {summary.get('cluster_id')} ({papers})\n"
+            f"{summary.get('summary', '').strip()}"
+        )
+
+    parts.append("## 综述大纲")
+    parts.append(outline.strip())
+    parts.append("## 综述全文")
+    parts.append(draft.strip())
+
+    output_path.write_text("\n\n".join(parts).strip() + "\n", encoding="utf-8")
+    logger = logging.getLogger("chatpdf")
+    logger.info("Review saved to %s", output_path)
 
 
 __all__ = ["main", "parse_args"]

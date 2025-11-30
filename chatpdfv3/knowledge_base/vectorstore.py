@@ -89,6 +89,43 @@ class VectorStore:
             )
         return payload
 
+    def get_all_documents(self, *, include_embeddings: bool = False) -> List[Dict]:
+        """Return every chunk stored in the collection.
+
+        This is primarily useful for offline processing steps such as
+        clustering, where we need the raw embeddings and metadata rather than
+        similarity search results.
+        """
+        if self._collection.count() == 0:
+            return []
+
+        include = ["metadatas", "documents"]
+        if include_embeddings:
+            include.append("embeddings")
+
+        records = self._collection.get(include=include)
+        documents = records.get("documents", []) or []
+        metadatas = records.get("metadatas", []) or []
+        ids = records.get("ids", []) or []
+        embeddings = records.get("embeddings") if include_embeddings else None
+
+        payload: list[dict] = []
+        for idx, chunk_id in enumerate(ids):
+            embedding_value = None
+            if embeddings is not None and idx < len(embeddings):
+                embedding_value = embeddings[idx]
+
+            payload.append(
+                {
+                    "id": chunk_id,
+                    "text": documents[idx] if idx < len(documents) else "",
+                    "metadata": metadatas[idx] if idx < len(metadatas) else {},
+                    "embedding": embedding_value,
+                }
+            )
+
+        return payload
+
     def stats(self) -> Dict[str, Optional[int | str]]:
         return {
             "persist_dir": str(self.persist_dir),
